@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OrgDown</string>
+    <string name="slide_hint">滑动以了解更多></string>
+    <string name="hint_mail">电子邮件地址或用户名</string>
+</resources>

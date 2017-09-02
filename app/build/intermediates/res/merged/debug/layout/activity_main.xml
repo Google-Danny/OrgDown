@@ -3,121 +3,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.cm.xingyu.shareapp.MainActivity">
 
-
-    <ImageView
-        android:id="@+id/orgdownIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50px"
-        android:layout_toLeftOf="@+id/app_name"
-        android:src="@drawable/pocket" />
 
     <TextView
         android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50px"
+        android:layout_marginTop="70dp"
+        android:drawableLeft="@drawable/pocket"
         android:text="OrgDown"
-        android:textSize="70px" />
+        android:textSize="40dp" />
 
     <TextView
         android:id="@+id/login_line"
-        android:layout_width="350px"
+        android:layout_width="180dp"
         android:layout_height="2px"
         android:layout_below="@+id/app_name"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100px"
+        android:layout_marginTop="60dp"
         android:background="@color/colorPrimaryDark" />
 
-    <FrameLayout
-        android:layout_below="@+id/login_line"
-        android:layout_marginTop="70px"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RelativeLayout
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <EditText
-                android:id="@+id/first_name"
-                android:hint="名字"
-                android:layout_width="400px"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:id="@+id/second_name"
-                android:hint="姓氏"
-                android:layout_width="400px"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/first_name"
-                />
-            <EditText
-                android:id="@+id/email"
-                android:hint="电子邮箱地址"
-                android:layout_width="400px"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/second_name"
-                />
-            <EditText
-                android:id="@+id/password"
-                android:hint="密码"
-                android:layout_width="400px"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/email"
-                />
-
-
-
-        </RelativeLayout>
-
-
-
-
-    </FrameLayout>
-
-    <FrameLayout
-        android:background="@color/lightGrey"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:layout_alignParentLeft="true"
-                android:text="取消"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content" />
-            <Button
-                android:layout_alignParentRight="true"
-                android:text="注册"
-                android:background="@color/orangeYellow"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content" />
-        </RelativeLayout>
-    </FrameLayout>
-
     <Button
-        android:id="@+id/sign_in"
-        android:layout_width="400px"
+        android:id="@+id/sign_in_main"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/login_line"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="110px"
+        android:layout_marginTop="60dp"
         android:textColor="@color/white"
         android:background="@color/red"
         android:text="注册"
-        android:visibility="gone"
         />
 
     <TextView
@@ -125,17 +42,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+         android:layout_below="@+id/sign_in_main"
+        android:layout_marginTop="20dp"
         android:text="登录"
-        android:visibility="gone"
+
         />
 
     <TextView
+        android:id="@+id/slide_text"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/slide_hint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone"
+
         />
 </RelativeLayout>
